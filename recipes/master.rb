@@ -22,6 +22,7 @@ apt_repository "puppetlabs" do
   distribution  node['lsb']['codename']
   components    ["main"]
   key           "http://apt.puppetlabs.com/pubkey.gpg"
+  action        :add
 end
 
 package "puppetmaster"
